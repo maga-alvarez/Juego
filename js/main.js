@@ -1,0 +1,1 @@
+let entrada = prompt("Ingrese el nombre de su personaje")
