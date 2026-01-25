@@ -1,1 +1,3 @@
-let entrada = prompt("Ingrese el nombre de su personaje")
+let nombredelpersonaje = prompt("Ingrese el nombre de su personaje")
+
+alert("Bienvenido " + nombredelpersonaje + "!")
