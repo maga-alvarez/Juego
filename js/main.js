@@ -13,8 +13,13 @@ function energiainicial (){
     console.log(" Tu energía inicial es " + eneregia)
 }
 function energiaactual(indiceActividad){
-    energia = energias[indiceActividad]
+    energia = energia + energias[indiceActividad]
     console.log("Tu energía actual es: " + energia)
+    if (energia < 0) {
+        energia = " Te quedaste sin energía. Estas muerto."
+    } else if (energia > 0) {
+        eneregia = "Te pasaste de eneregía. Estas muerto."
+    }
 }
 let actividadeliminada = actividades.pop
 
@@ -35,8 +40,7 @@ while (menu !== 4) {
                 }
                 break
         case 3: 
-            jugar()
-                let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
+            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
 
                 while (juego !== 6){
                     switch (menu) {
