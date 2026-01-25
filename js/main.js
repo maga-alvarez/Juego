@@ -14,13 +14,14 @@ function energiainicial (){
 
 function eneregiactual(){
     let eneregia = energiainicial + actividad + energia;
+
 }
 
 
 
-let menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. salir "))
+let menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad 4. salir "))
 
-while (menu !== 3) {
+while (menu !== 4) {
     switch (menu) {
         case 1: 
             energiainicial() 
@@ -29,20 +30,15 @@ while (menu !== 3) {
         case 2:
             for (let i = 0; i < actividades.length; i++){
                     console.log(actividades[i], energias[i]);
-                    break
                 }
+        case 3: 
+                
         default:
             alert ("opción incorrecta");
     }
-    menu = parseInt(prompt("Elije 1.ver energía actual, 2. ver actividades, 3. salir "))
+    menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. salir "))
 }
 
-//Recorrer actividades
-
-for (let i = 0; i < actividades.length; i++){
-    console.log(actividades[i], energias[i])
-
-}
 
 
 
