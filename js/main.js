@@ -8,14 +8,16 @@ saludar(nombredelpersonaje)
 
 const actividades = ["dormir", "comer", "hidratarse", "entrar", "correr", "estirar"]
 const energias = [15, 10, 5, -15, -10, -5]
+let eneregia = 25 
 function energiainicial (){
-    console.log(" Tu energía inicial es 25")
+    console.log(" Tu energía inicial es " + eneregia)
+}
+function energiaactual(indiceActividad){
+    energia = energias[indiceActividad]
+    console.log("Tu energía actual es: " + energia)
 }
 let actividadeliminada = actividades.pop
-function eneregiactual(){
-    let eneregia = energiainicial + actividad + energia;
 
-}
 
 
 
@@ -34,17 +36,28 @@ while (menu !== 4) {
                 break
         case 3: 
             jugar()
-             let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
-             if (juego === 1) {console.log("Sumaste 10 de energia! Tu energía actual es: " + (energiainicial + 10));
-                    } else if (juego === 2) {
-                    console.log("Sumaste 15 de energía! Tu energía actual es: " + (energiainicial + 15));
-                    } else if (juego === 3) {
-                    console.log("Sumaste 5 de energía! Tu energía actual es: " + (energiainicial + 5));
-                    } else if (juego === 4) {
-                    console.log("Restaste 15 de energía! Tu energía actual es: " + (energiainicial - 15));
-                    } else if (juego === 5) {
-                    console.log("Restaste 10 de energía! Tu energía actual es: " + (energiainicial - 10));
+                let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
+
+                while (juego !== 6){
+                    switch (menu) {
+                        case 1: 
+                            dormir()
+                            console.log("Sumaste 10 de energía!" + energiaactual)
+                        case 2:
+                            Comer()
+                            console.log("Sumaste 15 de energía!" + energiaactual)
+                        case 3:
+                            hidratarse()
+                            console.log("Sumaste 5 de energía!" + energiaactual)
+                        case 4:
+                            entrenar()
+                            console.log("Restaste 15 de energía!" - energiaactual)
+                        case 5:
+                            correr()
+                            console.log("Restaste 10 de energía!" + energiaactual)
                     }
+                }
+            
         default:
             alert ("opción incorrecta");
     }
@@ -55,3 +68,4 @@ while (menu !== 4) {
 
 
 
+ 
