@@ -8,9 +8,9 @@ saludar(nombredelpersonaje)
 
 const actividades = ["dormir", "comer", "hidratarse", "entrar", "correr", "estirar"]
 const energias = [15, 10, 5, -15, -10, -5]
-let eneregia = 25 
+let energia = 25 
 function energiainicial (){
-    console.log(" Tu energía inicial es " + eneregia)
+    console.log(" Tu energía inicial es " + energia)
 }
 function energiaactual(indiceActividad){
     energia = energia + energias[indiceActividad]
@@ -43,22 +43,17 @@ while (menu !== 4) {
             let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
 
                 while (juego !== 6){
-                    switch (energiaactual) {
+                    switch (juego) {
                         case 1: 
-                            dormir()
-                            console.log("Sumaste 10 de energía!" + energiaactual)
+                            energiaactual (0)
                         case 2:
-                            Comer()
-                            console.log("Sumaste 15 de energía!" + energiaactual)
+                            energiaactual (1)
+                        case 2:
+                            energiaactual (2)
                         case 3:
-                            hidratarse()
-                            console.log("Sumaste 5 de energía!" + energiaactual)
+                            energiaactual (3)
                         case 4:
-                            entrenar()
-                            console.log("Restaste 15 de energía!" - energiaactual)
-                        case 5:
-                            correr()
-                            console.log("Restaste 10 de energía!" + energiaactual)
+                            energiaactual (4)
                     }
                 }
                 break
