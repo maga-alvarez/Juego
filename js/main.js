@@ -16,13 +16,16 @@ function energiaactual(indiceActividad){
     energia = energia + energias[indiceActividad]
     console.log("Tu energía actual es: " + energia)
     if (energia < 0) {
-        energia = " Te quedaste sin energía. Estas muerto."
+        energia = 0
+        alert(" Te quedaste sin energía. Estas muerto.")
     } else if (energia > 100) {
-        eneregia = "Te pasaste de eneregía. Estas muerto."
+        enregia = 111
+        alert(" Te pasaste de energía. Estas muerto.")
     } else if (energia === 100) {
-        energia = "Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado!"
-    } else if (energía >0 < 100) {
-        energia = "Te faltó energía :( apretá F5 para iniciar una nueva partida"
+        energia = 100
+        alert("Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado!")
+    } else if (energia >0 && energia < 100) {
+        alert("Te faltó energía :( apretá F5 para iniciar una nueva partida")
     }
 }
 let actividadeliminada = actividades.pop
@@ -63,24 +66,13 @@ while (menu !== 4) {
                         energiaactual (4)
                         break
                     case 6: 
-                        energia()
+                        alert( "Tu puntaje final es: " + energia)
                         break
                     default : 
                         alert("Opción inválida. Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir")
                 }
-            }   
-            
-            if (seguirjugando){
-                let confiramcion = prompt("Querés elegir otra actividad? si/no").toLowerCase ()
-                if (confiramcion == "no")
-                    alert("Tu puntaje final es: " + energia)
+                juego =  parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
             }
-        }
     menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
+    }
 }
-
-
-
-
-
- 
