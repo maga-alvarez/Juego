@@ -49,7 +49,7 @@ while (menu !== 4) {
                 switch (juego) {
                     case 1: 
                         energiaactual (0)
-                        let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
+                        break
                     case 2:
                         energiaactual (1)
                         break
@@ -64,10 +64,17 @@ while (menu !== 4) {
                         break
                     case 6: 
                         energia()
+                        break
                     default : 
                         alert("Opción inválida. Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir")
                 }
-            }    
+            }   
+            
+            if (seguirjugando){
+                let confiramcion = prompt("Querés elegir otra actividad? si/no").toLowerCase ()
+                if (confiramcion == "no")
+                    alert("Tu puntaje final es: " + energia)
+            }
         }
     menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
 }
