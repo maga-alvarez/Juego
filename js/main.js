@@ -43,7 +43,7 @@ while (menu !== 4) {
             let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
 
                 while (juego !== 6){
-                    switch (menu) {
+                    switch (energiaactual) {
                         case 1: 
                             dormir()
                             console.log("Sumaste 10 de energía!" + energiaactual)
@@ -61,7 +61,7 @@ while (menu !== 4) {
                             console.log("Restaste 10 de energía!" + energiaactual)
                     }
                 }
-            
+                break
         default:
             alert ("opción incorrecta");
     }
