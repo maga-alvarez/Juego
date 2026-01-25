@@ -44,39 +44,31 @@ while (menu !== 4) {
                 }
                 break
         case 3: 
-            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
-                let continuar = true
-                while (juego !== 6){
-                    switch (juego) {
-                        case 1: 
-                            energiaactual (0)
-                            break
-                        case 2:
-                            energiaactual (1)
-                            break
-                        case 3:
-                            energiaactual (2)
-                            break
-                        case 4:
-                            energiaactual (3)
-                            break
-                        case 5:
-                            energiaactual (4)
-                            break
-                        default : 
-                            alert("Opción inválida. Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir")
-                    }
-                    
-                    let confirmacion = prompt("Querés hacer otra actividad?").toLowerCase()
-                    if (confirmacion == "no") {
-                        continuar = false
-                        alert("Su puntaje final es: " + energiaactual)
-                    }
+            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
+            while (juego !== 7){
+                switch (juego) {
+                    case 1: 
+                        energiaactual (0)
+                        let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
+                    case 2:
+                        energiaactual (1)
+                        break
+                    case 3:
+                        energiaactual (2)
+                        break
+                    case 4:
+                        energiaactual (3)
+                        break
+                    case 5:
+                        energiaactual (4)
+                        break
+                    case 6: 
+                        energia()
+                    default : 
+                        alert("Opción inválida. Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir")
                 }
-                break
-        default:
-            alert ("opción incorrecta");
-    }
+            }    
+        }
     menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
 }
 
