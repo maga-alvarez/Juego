@@ -17,8 +17,12 @@ function energiaactual(indiceActividad){
     console.log("Tu energía actual es: " + energia)
     if (energia < 0) {
         energia = " Te quedaste sin energía. Estas muerto."
-    } else if (energia > 0) {
+    } else if (energia > 100) {
         eneregia = "Te pasaste de eneregía. Estas muerto."
+    } else if (energia === 100) {
+        energia = "Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado!"
+    } else if (energía >0 < 100) {
+        energia = "Te faltó energía :( apretá F5 para iniciar una nueva partida"
     }
 }
 let actividadeliminada = actividades.pop
@@ -41,7 +45,7 @@ while (menu !== 4) {
                 break
         case 3: 
             let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir"))
-
+                let continuar = true
                 while (juego !== 6){
                     switch (juego) {
                         case 1: 
