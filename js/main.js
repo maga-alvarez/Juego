@@ -20,17 +20,17 @@ let actividadeliminada = actividades.pop
 
 function energiafinal(energiaactual){
     if (energia < 0) {
-        energia = 0
-        alert(" Te quedaste sin energía. Estas muerto."  + energia)
+        energia = energia
+        alert(" Te quedaste sin energía. Estas muerto. Tu puntaje final es: " + energia)
     } else if (energia > 100) {
-        enregia = 111
-        alert(" Te pasaste de energía. Estas muerto."  + energia)
+        enregia = energia
+        alert(" Te pasaste de energía. Estas muerto. Tu puntaje final es: " + energia )
     } else if (energia === 100) {
         energia = 100
-        alert("Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado!"  + energia)
+        alert("Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado! Tu puntaje final es: " + energia)
     } else if (energia > 0 && energia < 100){
-        energia = energiafinal 
-        alert("No llegaste a la energía óptima, perdiste :("  + energia)
+        energia = energia
+        alert("No llegaste a la energía óptima, perdiste :( Tu puntaje final es: " + energia)
     }
 }
 
@@ -70,9 +70,6 @@ while (menu !== 4) {
                         break
                     case 6: 
                         energiafinal()
-                            if (juego === 6){
-                                juego = 7
-                            }
                         break
                 }
                 juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
