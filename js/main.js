@@ -43,7 +43,7 @@ while (menu !== 4) {
     switch (menu) {
         case 1: 
             energiainicial() 
-                break
+            break
         case 2:
             for (let i = 0; i < actividades.length; i++){
                     console.log(actividades[i], energias[i]);
@@ -51,7 +51,7 @@ while (menu !== 4) {
                 break
         case 3: 
             let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. ver energía final \n 8. salir"))
-            while (juego !== 8){
+            while (juego !== 7){
                 switch (juego) {
                     case 1: 
                         energiaactual (0)
@@ -69,16 +69,12 @@ while (menu !== 4) {
                         energiaactual (4)
                         break
                     case 6: 
-                        puntajefinal()
-                        alert(energia + energiafinal)
+                        energiafinal()
                         break
                     default : 
-                        alert("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. ver energía final \n 8. salir")
+                        alert("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir")
                 }
-                juego =  parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
-            }
-            break
-    menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
+        }
     }
+    menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
 }
-
