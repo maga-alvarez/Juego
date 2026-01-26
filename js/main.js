@@ -50,7 +50,7 @@ while (menu !== 4) {
                 }
                 break
         case 3: 
-            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. ver energía final \n 8. salir"))
+            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
             while (juego !== 7){
                 switch (juego) {
                     case 1: 
@@ -71,10 +71,9 @@ while (menu !== 4) {
                     case 6: 
                         energiafinal()
                         break
-                    default : 
-                        alert("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir")
                 }
-        }
+                juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
+            }
     }
     menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
 }
