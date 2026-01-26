@@ -15,6 +15,10 @@ function energiainicial (){
 function energiaactual(indiceActividad){
     energia = energia + energias[indiceActividad]
     console.log("Tu energía actual es: " + energia)
+}
+let actividadeliminada = actividades.pop
+
+function energiafinal(energiaactual){
     if (energia < 0) {
         energia = 0
         alert(" Te quedaste sin energía. Estas muerto.")
@@ -24,11 +28,11 @@ function energiaactual(indiceActividad){
     } else if (energia === 100) {
         energia = 100
         alert("Ganaste!!! Llegaste al 100% de energía. ¡Bien juagado!")
-    } else if (energia >0 && energia < 100) {
-        alert("Te faltó energía :( apretá F5 para iniciar una nueva partida")
+    } else if (energia > 0 && energia < 100){
+        energia = energiafinal 
+        alert("No llegaste a la energía óptima, perdiste :(")
     }
 }
-let actividadeliminada = actividades.pop
 
 
 
@@ -47,8 +51,8 @@ while (menu !== 4) {
                 }
                 break
         case 3: 
-            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. salir"))
-            while (juego !== 7){
+            let juego = parseInt(prompt("Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. puntaje final \n 7. ver energía final \n 8. salir"))
+            while (juego !== 8){
                 switch (juego) {
                     case 1: 
                         energiaactual (0)
@@ -66,8 +70,9 @@ while (menu !== 4) {
                         energiaactual (4)
                         break
                     case 6: 
-                        alert( "Tu puntaje final es: " + energia)
+                        alert( "Tu puntaje final es: " + energia) 
                         break
+
                     default : 
                         alert("Opción inválida. Elije una actividad: \n 1. Dormir \n 2. Comer \n 3. Hidratarse \n 4. Entrenar \n 5. Correr \n 6. salir")
                 }
@@ -76,3 +81,4 @@ while (menu !== 4) {
     menu = parseInt(prompt("Elije una opción \n 1.ver energía inicial \n 2. ver actividades \n 3. elegir actividad \n 4. salir "))
     }
 }
+
