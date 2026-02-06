@@ -1,11 +1,16 @@
 let nombredelpersonaje = prompt("Ingrese el nombre de su personaje")
 
-const actividades = ["dormir", "comer", "hidratarse", "entrar", "correr", "estirar"]
-const energias = [15, 10, 5, -15, -10, -5]
+const actividades = {
+        "dormir": 15,
+        "comer": 10,
+        "hidratarse": 5,
+        "correr": -10,
+        "entrenar": -15
+}        
+        
+let energiainicial = 25
 
-function energiaactual(indiceActividad){
-    energia = energia + energias[indiceActividad]
-    console.log("Tu energía actual es: " + energia)
+function energia(energiainicial, actividades){
+        return energiainicial + actividades
 }
-
 
