@@ -1,49 +1,16 @@
-let nombredelpersonaje = prompt("Ingrese el nombre de su personaje")
-
-const actividades = [
-        {
-                id: 1,
-                actividad: "Dormir",
-                energia: 15
-        },
-
-         {
-                id: 2,
-                actividad: "Comer",
-                energia: 10
-        },
-
-         {
-                id: 3,
-                actividad: "Hidratarse",
-                energia: 5
-        },
-        
-
-         {
-                id: 4,
-                actividad: "Entrenar",
-                energia: -15
-        },
-
-         {
-                id: 5,
-                actividad: "Correr",
-                energia: -10
+class Actividades {
+        static id = 0
+        constructor(id, movimiento, energia) {
+                this.id = ++Actividades.id,
+                this.movimiento = movimiento,
+                this.energia = energia
         }
-]
 
-Object.entries(actividades).forEach(function (actividades) {
-        console.log(actividades)     
-});
-
-
-let energiaInicial = 25
-
-function energiaActual (){
-        function suma (energiaInicial){
-                
-
-        }
 }
+
+const actividad1 = new Actividades("Dormir", 15)
+const actividad2 = new Actividades("Comer", 10)
+const actividad3 = new Actividades("Hidratarse", 5)
+const actividad4 = new Actividades("Entrenar", -15)
+const actividad5 = new Actividades("Correr", -10)
 
