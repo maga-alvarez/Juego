@@ -1,4 +1,4 @@
-.collapse navbar-collapse{
+.navbar-collapse{
     display: flex;
     flex-direction: row;
     justify-items: flex-start;
@@ -7,4 +7,13 @@
 .nav{
     font-family: "Playwrite New Zealand Basic", font size;
     color: black;
+}
+
+.li{
+    list-style: none;
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
 }
