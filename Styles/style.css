@@ -1,33 +1,37 @@
 /*Fuente*/
 /*Font family Gravitas One */
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-/*Font family Playwrite New Zealand Basic */
+/*Font family Playwrite NZ Basic*/
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
+.body {
   background-color: black;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  color: #f3e9e7;
-  font-family: "Playwrite New Zealand Basic", font-size;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-
-.navbar-brand {
+.titulo {
   color: #9bcfe0;
-  font-family: "Playwrite New Zealand Basic", font-size;
+  justify-items: center;
+}
+
+.reglas-list {
+  list-style-type: disc;
+  color: #00a7c7;
+  font-family: "Playwrite NZ Basic", sans-serif;
+}
+
+p {
+  color: #9bcfe0;
+  font-family: "Playwrite NZ Basic", sans-serif;
+}
+
+.container-fluid {
+  font-family: "Playwrite New Zealand Basic";
+  color: #feab6b;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
