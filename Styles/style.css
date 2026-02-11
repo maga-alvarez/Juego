@@ -8,24 +8,26 @@
   padding: 0;
 }
 
-.navbar-collapse {
-  display: flex;
-  flex-direction: row;
-  justify-items: flex-start;
+body {
+  background-color: black;
 }
 
-.nav {
-  font-family: "Playwrite New Zealand Basic", font size;
-  color: black;
-}
-
-.li {
-  list-style: none;
-}
-
-.h1 {
+h1 {
   display: flex;
   justify-content: center;
+  color: #f3e9e7;
+  font-family: "Playwrite New Zealand Basic", font-size;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  color: #9bcfe0;
+  font-family: "Playwrite New Zealand Basic", font-size;
 }
 
 /*# sourceMappingURL=style.css.map */
