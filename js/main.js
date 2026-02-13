@@ -1,6 +1,6 @@
 class Actividades {
         static id = 0
-        constructor(id, movimiento, energia) {
+        constructor(movimiento, energia) {
                 this.id = ++Actividades.id,
                 this.movimiento = movimiento,
                 this.energia = energia
@@ -14,3 +14,12 @@ const actividad3 = new Actividades("Hidratarse", 5)
 const actividad4 = new Actividades("Entrenar", -15)
 const actividad5 = new Actividades("Correr", -10)
 
+const listaActividades = [
+        actividad1,
+        actividad2,
+        actividad3,
+        actividad4,
+        actividad5
+]
+
+console.log(listaActividades)
