@@ -22,4 +22,15 @@ const listaActividades = [
         actividad5
 ]
 
-console.log(listaActividades)
+let listadectividades = document.getElementById("listadeactividades")
+
+listaActividades.forEach(listaActividad => {
+        let card = document.createElement("div")
+        card.className = "card"
+        card.innerHTML = `<span>ID: ${listaActividad.id}</span>
+                         <h2>Actividad: ${listaActividad.movimiento}</h2>
+                         <h3>Energia: ${listaActividad.energia}</h3>`
+        listadectividades.appendChild(card)
+        
+});
+

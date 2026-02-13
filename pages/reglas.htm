@@ -8,32 +8,33 @@
     <!--CSS-->
      <link rel="stylesheet" href="../styles/style.css">
     <!-- JS -->
-     <script defer src="./JS/main.js"></script>
+     <script defer src="../JS/main.js"></script>
     <title>Kikeenergy</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Kikeenergy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Reglas</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./pages/score.htm">Score</a>
-            </li>
-        </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kikeenergy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Reglas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./pages/score.htm">Score</a>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
-    </nav>
+        </nav>
+    </header>
     <p>Bienvenido/a a KikeEnergy, un juego donde debes administrar la energía de tu personaje tomando buenas decisiones durante el día.
 
 Comienzas con una cantidad inicial de energía y podrás realizar distintas actividades. Cada actividad puede aumentar o disminuir tu energía, por lo que deberás elegir con cuidado.
@@ -53,13 +54,7 @@ Durante el juego podrás:</p>
 <p>La clave está en equilibrar descanso y actividad para alcanzar la energía perfecta.
 
 Actividades disponibles y su valor de energía</p>
-<ul class="reglas-list">
-    <li>Dormir: +15</li>
-    <li>Comer: +10</li>
-    <li>Hidratarse: +5</li>
-    <li>Entrenar: -15</li>  
-    <li>Correr: -10</li>
-</ul>
+<section id="listadeactividades"></section>
 <p>¡Buena suerte y juega con estrategia!</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
