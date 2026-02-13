@@ -7,6 +7,17 @@
 
 .contenedorb{
     display: grid;
-    grid-template-columns: 3, 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 20px;
+}
+
+.botoninicio{
+    width: 800px;
+    height: 60px;
+    background-color: #C96F8C;
+    color: #DED9DB;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
