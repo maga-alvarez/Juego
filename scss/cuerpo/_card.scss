@@ -1,15 +1,23 @@
+.h2card{
+    margin: 10px;
+    padding: 10px;
+    background-color: #C96F8C;
+    color: #DED9DB;
+    font-family: "Playwrite NZ Basic", sans-serif;
+    font-size: 20px;
+}
+
+#listadeactividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
 .card {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  height: 200px;
+  background-color: #121906;
+  color: #fff;
+  padding: 10px;
+  border: none;
 }
-.card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-.card h3 {
-  font-size: 1rem;
-  color: #555;
-}
+
+

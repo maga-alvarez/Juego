@@ -28,8 +28,8 @@ listaActividades.forEach(listaActividad => {
         let card = document.createElement("div")
         card.className = "card"
         card.innerHTML = `<span>ID: ${listaActividad.id}</span>
-                         <h2>Actividad: ${listaActividad.movimiento}</h2>
-                         <h3>Energia: ${listaActividad.energia}</h3>`
+                         <h2 class="h2card">Actividad: ${listaActividad.movimiento}</h2>
+                         <h3 class="h2card">Energia: ${listaActividad.energia}</h3>`
         listadectividades.appendChild(card)
         
 });
