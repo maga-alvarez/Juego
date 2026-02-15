@@ -1,3 +1,5 @@
+
+
 class Actividades {
         static id = 0
         constructor(movimiento, energia) {
@@ -22,15 +24,14 @@ const listaActividades = [
         actividad5
 ]
 
-let listadectividades = document.getElementById("listadeactividades")
+let botoninicio = document.getElementById("botoninicio")
+let contenedorb = document.getElementById("contenedorb")
+let oculto = document.getElementsByClassName("oculto")
 
-listaActividades.forEach(listaActividad => {
-        let card = document.createElement("div")
-        card.className = "card"
-        card.innerHTML = `<span>ID: ${listaActividad.id}</span>
-                         <h2 class="h2card">Actividad: ${listaActividad.movimiento}</h2>
-                         <h3 class="h2card">Energia: ${listaActividad.energia}</h3>`
-        listadectividades.appendChild(card)
-        
-});
+
+botoninicio.addEventListener("click", function() {
+    contenedorb.classList.remove("oculto")
+})
+
+
 

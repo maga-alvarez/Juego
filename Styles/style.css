@@ -50,18 +50,15 @@ h1 {
   color: #C96F8C !important;
 }
 
+.oculto {
+  display: none;
+}
+
 .boton {
   padding: 20px;
   background-color: #C96F8C;
   color: #DED9DB;
   border-radius: 10px;
-}
-
-.contenedorb {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
 }
 
 .botoninicio {
