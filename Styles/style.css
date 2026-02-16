@@ -36,6 +36,23 @@ h1 {
   padding: 20px;
 }
 
+.tabla {
+  background-color: #121906;
+  color: #D6BCC5;
+  font-family: "Playwrite NZ Basic", sans-serif;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.fila {
+  margin: 40px;
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
 .container-fluid {
   background-color: #121906;
 }
