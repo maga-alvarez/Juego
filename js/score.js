@@ -10,4 +10,4 @@ listaScore.forEach((puntuacion) => {
                     <td>${puntuacion.puntos}%</td>`
     tabla.appendChild(fila)
     
-});
+})
