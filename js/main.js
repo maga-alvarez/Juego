@@ -71,7 +71,7 @@ const nombre = document.getElementById("nombreusuario")
 botFinalizar.addEventListener("click", () => {
         const agregarnombre = nombre.value || "Anonimo"
         const puntuacionNueva = {
-                agregarnombre: agregarnombre,
+                nomnbreUsuario: agregarnombre,
                 puntos: energiaTotal
         }
         let listaScore = JSON.parse(localStorage.getItem("ranking")) || []
