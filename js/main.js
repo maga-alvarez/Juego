@@ -32,7 +32,10 @@ let energiaTotal = 0
 
 
 botoninicio.addEventListener("click", function() {
+    energiaTotal = 0
+    document.getElementById("energia").textContent = `Energia: ${energiaTotal}`
     contenedorb.classList.remove("oculto")
+    document.getElementById("resultadoFinal").classList.add("oculto")
 })
 
   
