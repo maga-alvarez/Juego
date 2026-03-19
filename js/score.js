@@ -11,3 +11,4 @@ listaScore.forEach((puntuacion) => {
     tabla.appendChild(fila)
     
 })
+
